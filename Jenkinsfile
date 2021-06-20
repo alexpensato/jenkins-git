@@ -3,7 +3,11 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                bat 'echo "Hello World"'
+                bat 'echo "Testing polling log"'
+            }
+        }
+        stage('BuildMore') {
+            steps {
                 bat '''
                     echo "Multiline shell steps works too"
                     bash -c "ls -lah"
